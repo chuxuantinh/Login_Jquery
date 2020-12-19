@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title><link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server"> 
+     
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                   aspxtutorial.com
+                </h1>
+            </div>
+         <div class="loginDisplay"></div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                     <asp:MenuItem NavigateUrl="http://www.aspxtutorial.com" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="http://www.aspxtutorial.com/demo/VS%202010/Json-Login-Webservices/Default.aspx" Text="Login Demo"/>
+                        <asp:MenuItem NavigateUrl="http;//www.StudentAcad.com" Text="Student Academic Blog"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div> 
+    </form>
+</body>
+</html>
